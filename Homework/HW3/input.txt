@@ -1,0 +1,266 @@
+4
+C(PHD, PHD)
+C(MS, MS)
+C(EE, EE)
+C(CS, CS)
+5
+~A(x,y) | ~B(z,w) | C(x,w)
+~C(y,x) | A(x,y)
+~C(x,y) | B(y,x)
+A(EE, CS)
+B(MS, PHD)
+
+
+2
+King(John)
+King(Julius)
+8
+Queen(Mary)
+Husband(Mary, John)
+~Husband(y, x) | ~Queen(y) | King(x)
+~Queen(x) | Beautiful(x)
+Husband(Sita, Julius)
+Sister(Mary, Sita)
+~Sister(x, y) | Sister(y, x)
+~Sister(x, y) | Queen(x) | Queen(y)
+
+
+
+4
+C(PHD, PHD)
+C(MS, MS)
+C(EE, EE)
+C(CS, CS)
+5
+~A(x,y) | ~B(z,w) | C(x,w)
+~C(y,x) | A(x,y)
+~C(x,y) | B(y,x)
+A(EE, CS)
+B(MS, PHD)
+
+
+
+2
+Evil(John)
+Happy(John)
+3
+~King(x) | ~Greedy(x) | Evil(x)
+King(John)
+Greedy(x)
+
+
+
+1
+A(John)
+2
+~A(x) | B(x)
+~B(x) | A(x)
+
+
+1
+B(John)
+1
+~A(x) | B(John)
+
+
+
+6
+F(Joe)
+H(John)
+~H(Alice)
+~H(John)
+G(Joe)
+X(Tom)
+14
+~F(x) | G(x)
+~G(x) | H(x)
+~H(x) | F(x)
+~R(x) | H(x)
+~A(x) | H(x)
+~D(x,y) | ~H(y)
+~B(x,y) | ~C(x,y) | A(x)
+B(John,Alice)
+B(John,Joe)
+~D(x,y) | ~Q(y) | C(x,y)
+D(John,Alice)
+Q(Joe)
+D(John,Joe)
+R(Tom)
+
+
+
+
+2
+Ancestor(Liz,Billy)
+Ancestor(Liz,Joe)
+6
+Mother(Liz,Charley)
+Father(Charley,Billy)
+~Mother(x,y) | Parent(x,y)
+~Father(x,y) | Parent(x,y)
+~Parent(x,y) | Ancestor(x,y)
+~Parent(x,y) | ~Ancestor(y,z) | Ancestor(x,z)
+
+
+
+1
+A(John)
+2
+~A(x) | B(x)
+~B(x) | A(x)
+
+
+
+2
+Ancestor(Liz,Billy)
+Ancestor(Liz,Joe)
+6
+Mother(Liz,Charley)
+Father(Charley,Billy)
+~Mother(x,y) | Parent(x,y)
+~Father(x,y) | Parent(x,y)
+~Parent(x,y) | Ancestor(x,y)
+~Parent(x,y) | ~Ancestor(y,z) | Ancestor(x,z)
+
+
+
+6
+F(Joe)
+H(John)
+~H(Alice)
+~H(John)
+G(Joe)
+G(Tom)
+14
+~F(x) | G(x)
+~G(x) | H(x)
+~H(x) | F(x)
+~R(x) | H(x)
+~A(x) | H(x)
+~D(x,y) | ~H(y)
+~B(x,y) | ~C(x,y) | A(x)
+B(John,Alice)
+B(John,Joe)
+~D(x,y) | ~Q(y) | C(x,y)
+D(John,Alice)
+Q(Joe)
+D(John,Joe)
+R(Tom)
+
+
+
+1
+Kills(Curiosity, Tuna)
+7
+Dog(D)
+Owns(Jack,D)
+~Dog(y) | ~Owns(x,y) | AnimalLover(x)
+~AnimalLover(w) | ~Animal(y) | ~Kills(w,y)
+Kills(Jack, Tuna) | Kills(Curiosity, Tuna)
+Cat(Tuna)
+~Cat(z) | Animal(z)
+
+
+
+
+1
+GA(Add)
+3
+~FA(y,y,Kishan) | GA(z)
+~AB(x,y,Kishan) | FA(x,y,y)
+AB(Kishan,Kishan,Kishan)
+
+
+2
+Frustrated(Coy)
+Frustrated(Bill)
+11
+~Coyote(x) | Roadrunner(y)
+~Coyote(x) | Chase(x,y)
+~Roadrunner(x) | ~Beep(x) | Smart(x)
+~Coyote(x) | ~Roadrunner(y) | ~Smart(y) | ~Catch(x,y)
+~Coyote(x) | ~Roadrunner(y) | ~Chase(x,y) | Catch(x,y) | Frustrated(x)
+~Roadrunner(x) | Beep(x)
+Beep(RR)
+Coyote(Coy)
+~Coyote(Bill)
+Roadrunner(RR)
+Roadrunner(RRtwo)
+
+
+
+1
+Santa(John)
+3
+~T4(A) |T4(B)
+T4(A)
+~T4(x) |T4(C)
+
+
+
+2
+King(John)
+King(Julius)
+8
+Queen(Mary)
+Husband(Mary, John)
+~Husband(y, x) | ~Queen(y) | King(x)
+~Queen(x) | Beautiful(x)
+Husband(Sita, Julius)
+Sister(Mary, Sita)
+~Sister(x, y) | Sister(y, x)
+~Sister(x, y) | Queen(x) | Queen(y)
+
+
+
+2
+~Date(Mary,John)
+Date(Mary,Bill)
+11
+~Buy(x)|Owns(x,y)
+~Buy(x)|Rabbit(y)|Grocery(y)
+~Dog(x)|Rabbit(y)
+~Dog(x)|Chase(x,y)
+Buy(Mary)
+~Owns(x,y)|~Rabbit(y)|~Rabbit(w)|~Chase(z,w)|Hates(x,z)
+Dog(x)
+Owns(John,x)
+~Owns(y,z)|~Hates(x,z)|~Date(x,y)
+Grocery(G)
+~Owns(Mary,G)
+
+
+2
+Female(Alice)
+Male(Bob)
+3
+Female(x) | Human(x)
+Male(y) | Human(y)
+~Human(z)
+
+2
+Ancestor(Liz,Billy)
+Ancestor(Liz,Joe)
+6
+Mother(Liz,Charley)
+Father(Charley,Billy)
+~Mother(x,y) | Parent(x,y)
+~Father(x,y) | Parent(x,y)
+~Parent(x,y) | Ancestor(x,y)
+~Parent(x,y) | ~Ancestor(y,z) | Ancestor(x,z)
+
+
+1
+B(John)
+1
+~A(x) | B(John)
+
+
+1
+A(John)
+2
+~A(x) | B(x)
+~B(x) | A(x)
+
+
+
